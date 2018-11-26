@@ -6,7 +6,7 @@
 #    By: dkhatri <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/14 11:17:23 by dkhatri           #+#    #+#              #
-#    Updated: 2018/11/24 19:34:35 by dkhatri          ###   ########.fr        #
+#    Updated: 2018/11/26 13:19:30 by dkhatri          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,23 +14,23 @@ NAME = libft.a
 
 FLAGS = -Wall -Wextra -Werror -c
 
-MANDATORY = ft_memset ft_bzero ft_memcpy ft_memccpy ft_memmove ft_memchr \
-			ft_memcmp ft_strlen ft_strdup ft_strcpy ft_strncpy ft_strcat \
-			ft_strncat ft_strlcat ft_strchr ft_strrchr ft_strstr \
-			ft_strnstr ft_strcmp ft_strncmp ft_atoi ft_isalpha ft_isdigit \
-			ft_isalnum ft_isascii ft_isprint ft_toupper ft_tolower
+MANDATORY = ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c \
+			ft_memchr.c ft_memcmp.c ft_strlen.c ft_strdup.c ft_strcpy.c \
+			ft_strncpy.c ft_strcat.c ft_strncat.c ft_strlcat.c ft_strchr.c \
+			ft_strrchr.c ft_strstr.c ft_strnstr.c ft_strcmp.c ft_strncmp.c \
+			ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
+			ft_isprint.c ft_toupper.c ft_tolower.c
 
-ADDITIONAL = ft_memalloc ft_memdel ft_strnew ft_strdel ft_strclr ft_striter \
-			 ft_striteri ft_strmap ft_strmapi ft_strequ ft_strnequ ft_strsub \
-			 ft_strjoin ft_strtrim ft_strsplit ft_itoa ft_putchar ft_putstr \
-			 ft_putendl ft_putnbr ft_putchar_fd ft_putstr_fd ft_putendl_fd \
-			 ft_putnbr_fd
+ADDITIONAL = ft_memalloc.c ft_memdel.c ft_strnew.c ft_strdel.c ft_strclr.c \
+			 ft_striter.c  ft_striteri.c ft_strmap.c ft_strmapi.c ft_strequ.c \
+			 ft_strnequ.c ft_strsub.c ft_strjoin.c ft_strtrim.c ft_strsplit.c \
+			 ft_itoa.c ft_putchar.c ft_putstr.c ft_putendl.c ft_putnbr.c \
+			 ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 
-BONUS = ft_lstnew ft_lstdelone ft_lstdel ft_lstadd ft_lstiter ft_lstmap
+BONUS = ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c \
+		ft_lstmap.c
 
-SRC = $(MANDATORY:=.c) $(ADDITIONAL:=.c) $(BONUS:=.c)
-
-SRCO = $(MANDATORY:=.o) $(ADDITIONAL:=.o) $(BONUS:=.o)
+SRCO = $(MANDATORY:.c=.o) $(ADDITIONAL:.c=.o) $(BONUS:.c=.o)
 
 DEPS = libft.h
 
