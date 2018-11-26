@@ -6,7 +6,7 @@
 #    By: dkhatri <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/14 11:17:23 by dkhatri           #+#    #+#              #
-#    Updated: 2018/11/26 13:19:30 by dkhatri          ###   ########.fr        #
+#    Updated: 2018/11/26 13:44:28 by dkhatri          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,9 +44,9 @@ $(NAME): $(SRCO)
 	ranlib $(NAME)
 
 clean:
-	rm -f $(SRCO)
+	/bin/rm -f $(SRCO)
 
 fclean: clean
-	rm -f $(NAME)
+	/bin/rm -f $(NAME)
 
 re: fclean all	
