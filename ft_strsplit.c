@@ -6,13 +6,13 @@
 /*   By: dkhatri <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/20 14:56:07 by dkhatri           #+#    #+#             */
-/*   Updated: 2018/11/21 17:24:06 by dkhatri          ###   ########.fr       */
+/*   Updated: 2018/11/26 12:48:26 by dkhatri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		ft_find_all_delimit(char *str, char del)
+static int		ft_find_all_delimit(char const *str, char del)
 {
 	int		word;
 	int		was_del;
@@ -39,7 +39,7 @@ static int		ft_find_all_delimit(char *str, char del)
 	return (word);
 }
 
-static char		*ft_dup(char *start, char *end)
+static char		*ft_dup(char const *start, char const *end)
 {
 	char	*s;
 	int		i;
@@ -57,11 +57,11 @@ static char		*ft_dup(char *start, char *end)
 	return (s);
 }
 
-static int		ft_transfer(char **arr, char *str, char c)
+static int		ft_transfer(char **arr, char const *str, char c)
 {
-	char	*start;
-	int		len;
-	int		i;
+	char const	*start;
+	int			len;
+	int			i;
 
 	start = str;
 	len = 0;
@@ -86,7 +86,7 @@ static int		ft_transfer(char **arr, char *str, char c)
 	return (1);
 }
 
-char			**ft_strsplit(char *s, char c)
+char			**ft_strsplit(char const *s, char c)
 {
 	char	**arr;
 	int		len;

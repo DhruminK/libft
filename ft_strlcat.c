@@ -6,18 +6,18 @@
 /*   By: dkhatri <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/10 14:38:43 by dkhatri           #+#    #+#             */
-/*   Updated: 2018/11/19 12:51:31 by dkhatri          ###   ########.fr       */
+/*   Updated: 2018/11/26 12:41:20 by dkhatri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dest, char *src, size_t size)
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t		len_d;
 	size_t		i;
 	size_t		n;
-	char		*s;
+	const char	*s;
 
 	len_d = ft_strlen(dest);
 	if (len_d >= size)

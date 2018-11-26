@@ -6,13 +6,13 @@
 /*   By: dkhatri <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/16 17:08:51 by dkhatri           #+#    #+#             */
-/*   Updated: 2018/11/16 18:04:57 by dkhatri          ###   ########.fr       */
+/*   Updated: 2018/11/26 12:48:41 by dkhatri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(char *s)
+void	ft_putstr(char const *s)
 {
 	while (*s != '\0')
 	{

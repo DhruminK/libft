@@ -6,13 +6,13 @@
 /*   By: dkhatri <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/16 16:28:18 by dkhatri           #+#    #+#             */
-/*   Updated: 2018/11/16 16:59:28 by dkhatri          ###   ########.fr       */
+/*   Updated: 2018/11/26 12:31:52 by dkhatri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memccpy(void *dst, void *src, int c, size_t n)
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
 	char	*dest;
 	char	*sr;

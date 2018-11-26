@@ -6,7 +6,7 @@
 /*   By: dkhatri <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/20 15:16:41 by dkhatri           #+#    #+#             */
-/*   Updated: 2018/11/20 19:02:18 by dkhatri          ###   ########.fr       */
+/*   Updated: 2018/11/26 12:47:02 by dkhatri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static int	ft_is_ws(char s)
 	return (s == ' ' || s == '\t' || s == '\n' ? 1 : 0);
 }
 
-static char	*ft_transfer(char *s, int start, int end)
+static char	*ft_transfer(char const *s, int start, int end)
 {
 	char	*str;
 	size_t	i;
@@ -40,7 +40,7 @@ static char	*ft_transfer(char *s, int start, int end)
 	return (str);
 }
 
-char		*ft_strtrim(char *s)
+char		*ft_strtrim(char const *s)
 {
 	size_t			i;
 	size_t			k;
